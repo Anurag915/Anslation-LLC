@@ -61,7 +61,7 @@ npm run dev
 ```
 
 Then open:
-👉 [http://localhost:5173](http://localhost:5173)
+👉 [https://anslation-llc.vercel.app/](https://anslation-llc.vercel.app/)
 
 ---
 
