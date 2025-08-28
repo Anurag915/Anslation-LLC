@@ -1,12 +1,93 @@
-# React + Vite
+# 🚗 Vehicle Comparator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web app that allows users to **search and compare two vehicles** by fetching real-time specs and details using the **Cars by API Ninjas** API (via RapidAPI).
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* 🔍 **Autocomplete search**: Suggestions appear as you type vehicle names.
+* 📊 **Vehicle comparison**: Compare 2 cars side by side with detailed specs.
+* 🎨 **Modern UI**: Built with Tailwind CSS, fully responsive design.
+* ⚡ **API-powered**: Uses RapidAPI to fetch car specs.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* [React.js](https://react.dev/)
+* [Vite](https://vitejs.dev/) (bundler)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [Axios](https://axios-http.com/) for API requests
+* [RapidAPI - Cars by API Ninjas](https://rapidapi.com/apininjas/api/cars-by-api-ninjas/)
+
+---
+
+## 📦 Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/vehicle-comparator.git
+cd vehicle-comparator
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Get your API key
+
+* Go to [RapidAPI](https://rapidapi.com/apininjas/api/cars-by-api-ninjas/)
+* Subscribe to the **Cars by API Ninjas** API
+* Copy your API key
+
+### 4. Create a `.env` file in the root folder
+
+```env
+VITE_RAPIDAPI_KEY=your_api_key_here
+```
+
+⚠️ **Do not commit your `.env` file** to GitHub.
+
+---
+
+## ▶️ Running the App
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Then open:
+👉 [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── VehicleCompare.jsx   # Main comparison component
+│   ├── VehicleCard.jsx      # Displays vehicle specs
+│   ├── CarIcon.jsx          # Placeholder icon
+├── App.jsx
+├── main.jsx
+```
+
+---
+
+## 🚀 Future Improvements
+
+* [ ] Show **average price & mileage** (via Car Averages API)
+* [ ] Add **charts** to compare MPG / horsepower visually
+* [ ] Save recent comparisons
+
+---
+
+## 👨‍💻 Author
+
+Developed by **\[Anurag Prajapati]A** ✨
+If you like this project, feel free to ⭐ star the repo!
